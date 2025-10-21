@@ -12,7 +12,7 @@ services:
   web:
     image: nginx:1.25
     ports:
-      - "8080:8080"
+      - "9090:8080"  # 외부포트:내부포트 (9090으로 변경)
     volumes:
       - ./nginx/html:/usr/share/nginx/html:ro
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
